@@ -1,0 +1,41 @@
+:root{
+    --rich-black-fogra-29: 220, 60%, 5%;
+    --gunmetal:210, 25%, 20%;
+    --spanish-gray: 185, 5%, 57%;
+    --black-bean:5, 81%, 12%;
+    --silver-sand: 100, 5%, 75%, 1;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        margin-left: 44%;
+        
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.9em;
+        position: relative;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: black; /*this changes colour of navbar text*/
+        text-transform: capitalize;
+    }
+    
+    .navbar ul li::after{
+        content: '';
+        height: 2px;
+        width:0;
+        background: black; /*this changes colour of navbar underline*/
+        position: absolute;
+        left : 0;
+        bottom: -5px;
+        transition: 0.6s;
+    }
+    .navbar ul li:hover:after{
+        width:100%;
+    }
